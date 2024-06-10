@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="/index.js" defer></script>
+    <title>Banking Website</title>
+    <style>
+      @keyframes movingY {
+        50% {
+          transform: translateY(-1rem);
+        }
+      }
+
+      .animation-movingY {
+        animation: movingY 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-color-primary text-color-white tracking-wider">
+    <header class="sticky top-0 z-50">
+      <nav class="container mx-auto p-6 flex justify-between items-center">
+        <div class="py-5 text-color-secondary font-bold text-3xl">
+          <a href="#home"> <span class="text-white">Enoch</span>Code. </a>
+        </div>
+        <div>
+          <ul class="hidden lg:flex items-center space-x-6">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonial"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+
+            <li>
+              <button
+                class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200"
+              >
+                free trial
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- mobile screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden bg-color-primary-dark h-[100vh] absolute inset-0 z-40"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hlink"
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#testimonial"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#pricing"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#contact"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+
+            <li><button class="btn">free trial</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <button
+        id="scrollToTopButton"
+        class="hidden fixed bottom-8 right-8 bg-color-secondary text-white p-4 rounded-full shadow-lg transition-opacity duration-300"
+      >
+        <i class="fa fa-chevron-up"></i>
+      </button>
+
+      <section id="home" class="relative">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+
+        <div class="container mx-auto py-20 px-6">
+          <div class="flex flex-col items-center z-20 md:flex-row">
+            <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+              <h1 class="title">Awesome App for Your Finances</h1>
+              <p class="leading-relaxed text-xl mb-10">
+                Discover the ultimate tool to simplify your financial life.
+                <span class="text-color-secondary text-2xl font-bold"
+                  >Enoch <span class="text-white">Code</span></span
+                >
+                Finance helps you track expenses, monitor savings, and manage
+                your budget effortlessly. Whether you're saving for a goal,
+                planning a budget, or just keeping track of your spending, our
+                app is designed to make financial management straightforward and
+                stress-free.
+              </p>
+              <button class="btn">Download App</button>
+            </div>
+
+            <div class="md:w-1/2 animate-movingY">
+              <img src="/assets/hero1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="bg-color-primary-light">
+        <div class="container mx-auto px-6 py-20">
+          <div class="text-center m-auto mb-20 md:-w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4">Our Features</h4>
+            <h1 class="title">
+              Easy to Manage All of Your Payments With The Help Of Our App
+            </h1>
+          </div>
+
+          <div
+            class="px-8 grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 sm:px-4 lg:px-8"
+          >
+            <!-- card no 1 -->
+            <div
+              class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+            >
+              <div
+                class="bg-color-secondary inline-block rounded-2xl py-5 px-6"
+              >
+                <i class="fa fa-calendar-days text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">Expense Tracking</h3>
+              <p class="leading-relaxed">
+                automatically import and categorize transactions from linked
+                bank accounts, credit cards, and other financial institutions.
+              </p>
+            </div>
+
+            <!-- card no 2 -->
+            <div
+              class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+            >
+              <div
+                class="bg-color-secondary inline-block rounded-2xl py-5 px-6"
+              >
+                <i class="fa fa-chart-column text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">Finance Snapshot</h3>
+              <p class="leading-relaxed">
+                Get a quick and clear picture of your current financial health
+                at a specific point in time.
+              </p>
+            </div>
+
+            <!-- card no 3 -->
+            <div
+              class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+            >
+              <div
+                class="bg-color-secondary inline-block rounded-2xl py-5 px-6"
+              >
+                <i class="fa fa-phone text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">Support 24/24</h3>
+              <p class="leading-relaxed">
+                Live Chat, Email support, a consistent call cennter in time of
+                need
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="saving-money">
+        <div class="container mx-auto px-6 py-20 relative">
+          <div class="blob1"></div>
+          <div class="blob2"></div>
+          <div class="flex flex-col items-center justify-between md:flex-row">
+            <div class="mb-12 md:w-1/2">
+              <img src="/assets/hero2.png" alt="" />
+            </div>
+            <div class="text-center md:text-left md:w-1/2 md:ml-20">
+              <h4 class="font-bold text-color-secondary mb-4">Saving Money</h4>
+              <h1 class="title mb-4">Best Financing App To Save Your Money</h1>
+              <p class="leading-relaxed mb-10">
+                Best Financing app ever in the world. Easy to use and very user
+                friendly for mobile banking. You can control your card easily
+                and send money to someone with just on click
+              </p>
+              <button class="btn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="bg-color-primary-light">
+        <div class="container mx-auto px-6 py-20">
+          <div class="text-center m-auto mb-20 md:-w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4">How it Works</h4>
+            <h1 class="title">Growing Up Your Money Savings</h1>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- card 1 -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200"
+              >
+                <p
+                  class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/assets/arrow.png')] lg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52"
+                >
+                  1
+                </p>
+              </div>
+              <h3 class="text-xl font-bold py-4">Install the app</h3>
+              <p class="leading-relaxed text-sm">
+                Downloading EnochCode Finance is quick and easy. Simply visit
+                the App Store or Google Play, search for EnochCode Finance, and
+                click the install button. The app will be ready to use in just a
+                few moments.
+              </p>
+            </div>
+
+            <!-- card 2 -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-color-secondary"
+              >
+                <p
+                  class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/assets/arrow.png')] lg:after:absolute lg:after:top-10 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52"
+                >
+                  2
+                </p>
+              </div>
+              <h3 class="text-xl font-bold py-4">Setup Your Profie</h3>
+              <p class="leading-relaxed text-sm">
+                After installation, create your personal profile. Input your
+                financial information, set your preferences, and link your bank
+                accounts securely. This step ensures that your financial data is
+                accurately tracked and managed.
+              </p>
+            </div>
+
+            <!-- card 3 -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200"
+              >
+                <p class="text-6xl">3</p>
+              </div>
+              <h3 class="text-xl font-bold py-4">Enjoy the Features</h3>
+              <p class="leading-relaxed text-sm">
+                With your profile set up, you can now explore and utilize the
+                full range of features offered by EnochCode Finance. Track
+                expenses, monitor your savings, set budgets, and get
+                personalized financial insights. Managing your finances has
+                never been this easy or effective.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial">
+        <div class="container mx-auto px-6 py-20">
+          <div class="text-center m-auto mb-20 md:-w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4">User Reviews</h4>
+            <h1 class="title">
+              What Clients Say About Our App After They've Used It
+            </h1>
+          </div>
+
+          <!-- review container -->
+          <div class="mt-8">
+            <div class="flex items-center justify-center flex-wrap">
+              <img
+                src="/assets/user1.jpg"
+                alt=""
+                class="h-32 w-32 rounded-full p-1 m-3 cursor-pointer user-pic active-pic"
+                onclick="showReview()"
+              />
+              <img
+                src="/assets/user2.jpg"
+                alt=""
+                class="h-32 w-32 rounded-full p-1 m-3 cursor-pointer user-pic"
+                onclick="showReview()"
+              />
+              <img
+                src="/assets/user3.jpg"
+                alt=""
+                class="h-32 w-32 rounded-full p-1 m-3 cursor-pointer user-pic"
+                onclick="showReview()"
+              />
+              <img
+                src="/assets/user4.jpg"
+                alt=""
+                class="h-32 w-32 rounded-full p-1 m-3 cursor-pointer user-pic"
+                onclick="showReview()"
+              />
+              <img
+                src="/assets/user5.jpg"
+                alt=""
+                class="h-32 w-32 rounded-full p-1 m-3 cursor-pointer user-pic"
+                onclick="showReview()"
+              />
+            </div>
+
+            <div
+              class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]"
+            >
+              <div class="user-text active-text">
+                <p class="md:text-2xl mb-6">
+                  "As an archaeologist, I travel frequently and need a reliable
+                  app to manage my finances on the go. This app has been a
+                  game-changer for me. The expense tracking feature helps me
+                  stay on budget, and I can easily transfer funds no matter
+                  where I am. Highly recommended!"
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">
+                  Tella Driezola
+                </h4>
+                <p>Archeologist</p>
+              </div>
+
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "I've tried several financial apps, but none have been as
+                  intuitive and feature-rich as this one. Setting up my profile
+                  was a breeze, and the finance snapshot gives me a clear
+                  overview of my expenses and savings. It's a must-have for
+                  anyone looking to get a better grip on their finances."
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">
+                  Marking Nesus
+                </h4>
+                <p>IOS Developer</p>
+              </div>
+
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "As a bank manager, I understand the importance of financial
+                  management tools, and this app stands out. The support team is
+                  responsive and available 24/7, which is crucial for resolving
+                  any issues promptly. It’s an excellent tool for both personal
+                  and professional use."
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">
+                  Duncan Hills
+                </h4>
+                <p>Bank Manager</p>
+              </div>
+
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "Managing finances can be challenging, especially in my line
+                  of work. This app simplifies everything with its user-friendly
+                  interface and powerful features. I particularly appreciate the
+                  security measures in place, which give me peace of mind
+                  knowing my data is safe."
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">Betich Kun</h4>
+                <p>Arms Dealer</p>
+              </div>
+
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "Being constantly on the move, I needed an app that was not
+                  only reliable but also easy to use. This app has exceeded my
+                  expectations. The ability to track expenses and manage
+                  multiple accounts seamlessly has made my financial management
+                  much easier. I can’t imagine going back to my old methods."
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">
+                  Kate Marshall
+                </h4>
+                <p>Human Rights Activist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="bg-color-primary-light">
+        <div class="container mx-auto px-6 py-20">
+          <div class="text-center m-auto mb-20 md:-w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4">Pricing</h4>
+            <h1 class="title">Get In Reasonable Prices</h1>
+
+            <!-- rounded switch button -->
+            <div class="mt-5 flex items-center justify-center gap-4">
+              <p>Bill Monthly</p>
+              <label
+                class="cursor-pointer relative inline-block w-20 h-8 rounded-full"
+              >
+                <input
+                  type="checkbox"
+                  id="toggleBtn"
+                  class="peer opacity-0 w-0 h-0"
+                />
+                <span
+                  class="absolute top-0 left-0 right-0 bottom-0 bg-color-primary-light border border-solid border-color-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:rounded-full before:bg-color-white before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary"
+                ></span>
+              </label>
+              <p>Bill Anually</p>
+            </div>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <!-- card 1 -->
+            <div class="card relative h-auto w-auto">
+              <!-- frontside -->
+              <div
+                id="card_1_front"
+                class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full"
+              >
+                <div class="relative">
+                  <p
+                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0"
+                  >
+                    20
+                    <span class="text-sm font-normal tracking-widest"
+                      >/per month</span
+                    >
+                  </p>
+                </div>
+                <div class="py-10">
+                  <h3 class="text-xl font-bold pb-3">Basic</h3>
+                  <p class="leading-relaxed">
+                    For Beginners Who Want To Scale Their Business Globaly
+                  </p>
+                </div>
+
+                <ul class="space-y-4 pb-10">
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Expense Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Card Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Instant Statistics</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Bookmark Function</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Accounting System</span>
+                  </li>
+                </ul>
+
+                <button class="card_btn">Get Started</button>
+              </div>
+
+              <!-- backside -->
+              <div
+                id="card_1_back"
+                class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0"
+              >
+                <div class="relative">
+                  <p
+                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0"
+                  >
+                    100
+                    <span class="text-sm font-normal tracking-widest"
+                      >/per annum</span
+                    >
+                  </p>
+                </div>
+                <div class="py-10">
+                  <h3 class="text-xl font-bold pb-3">Basic</h3>
+                  <p class="leading-relaxed">
+                    For Beginners Who Want To Scale Their Business Globaly
+                  </p>
+                </div>
+
+                <ul class="space-y-4 pb-10">
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Expense Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Card Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Instant Statistics</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Bookmark Function</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Accounting System</span>
+                  </li>
+                </ul>
+
+                <button class="card_btn">Get Started</button>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card relative h-auto w-auto">
+              <!-- frontside -->
+              <div
+                id="card_2_front"
+                class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full"
+              >
+                <div class="relative">
+                  <p
+                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0"
+                  >
+                    50
+                    <span class="text-sm font-normal tracking-widest"
+                      >/per month</span
+                    >
+                  </p>
+                </div>
+                <div class="py-10">
+                  <h3 class="text-xl font-bold pb-3">Standard</h3>
+                  <p class="leading-relaxed">
+                    For Experienced business owners Who Want To Scale Their
+                    Business Globaly
+                  </p>
+                </div>
+
+                <ul class="space-y-4 pb-10">
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Expense Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Card Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="p1-4">Instant Statistics</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Bookmark Function</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Accounting System</span>
+                  </li>
+                </ul>
+
+                <button class="card_btn">Get Started</button>
+              </div>
+
+              <!-- backside -->
+              <div
+                id="card_2_back"
+                class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0"
+              >
+                <div class="relative">
+                  <p
+                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0"
+                  >
+                    500
+                    <span class="text-sm font-normal tracking-widest"
+                      >/per annum</span
+                    >
+                  </p>
+                </div>
+                <div class="py-10">
+                  <h3 class="text-xl font-bold pb-3">Standard</h3>
+                  <p class="leading-relaxed">
+                    For Experienced business owners Who Want To Scale Their
+                    Business Globaly
+                  </p>
+                </div>
+
+                <ul class="space-y-4 pb-10">
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Expense Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Card Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="p1-4">Instant Statistics</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Bookmark Function</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-gray"></i>
+                    <span class="p1-4">Accounting System</span>
+                  </li>
+                </ul>
+
+                <button class="card_btn">Get Started</button>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="card relative h-auto w-auto">
+              <!-- frontside -->
+              <div
+                id="card_3_front"
+                class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full"
+              >
+                <div class="relative">
+                  <p
+                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0"
+                  >
+                    100
+                    <span class="text-sm font-normal tracking-widest"
+                      >/per month</span
+                    >
+                  </p>
+                </div>
+                <div class="py-10">
+                  <h3 class="text-xl font-bold pb-3">Premium</h3>
+                  <p class="leading-relaxed">
+                    For Large Organizations Who Want To Scale Their Business
+                    Globaly
+                  </p>
+                </div>
+
+                <ul class="space-y-4 pb-10">
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Expense Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Card Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="p1-4">Instant Statistics</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="p1-4">Bookmark Function</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="p1-4">Accounting System</span>
+                  </li>
+                </ul>
+
+                <button class="card_btn">Get Started</button>
+              </div>
+
+              <!-- backside -->
+              <div
+                id="card_3_back"
+                class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0"
+              >
+                <div class="relative">
+                  <p
+                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0"
+                  >
+                    1000
+                    <span class="text-sm font-normal tracking-widest"
+                      >/per annum</span
+                    >
+                  </p>
+                </div>
+                <div class="py-10">
+                  <h3 class="text-xl font-bold pb-3">Premium</h3>
+                  <p class="leading-relaxed">
+                    For Large Organizations Who Want To Scale Their Business
+                    Globaly
+                  </p>
+                </div>
+
+                <ul class="space-y-4 pb-10">
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Expense Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="pl-4">Card Management</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="p1-4">Instant Statistics</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="p1-4">Bookmark Function</span>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bookmark text-color-secondary"></i>
+                    <span class="p1-4">Accounting System</span>
+                  </li>
+                </ul>
+
+                <button class="card_btn">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog">
+        <div class="container mx-auto px-6 py-20">
+          <div class="text-center m-auto mb-20 md:-w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4">
+              Innovation and Quality Improvement
+            </h4>
+            <h1 class="title">Latest Updates, Solutions And Company News</h1>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <!-- card 1 -->
+            <div>
+              <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                <img
+                  src="/assets/blog1.png"
+                  alt=""
+                  class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+                />
+              </div>
+              <div>
+                <div class="flex items-center gap-5 py-5">
+                  <p>20 August 2024</p>
+                  <p>1 min read</p>
+                </div>
+
+                <a
+                  href="#blog"
+                  class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline"
+                  >Four ways to cheer yourself up during a cozy evening!</a
+                >
+
+                <p class="leading-relaxed my-5">
+                  On the second edition of our Serious Business, inc. gets it
+                  all on buriams day of conglonomeration to know the next get
+                  away plan...
+                </p>
+
+                <a
+                  href="#blog"
+                  class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out"
+                >
+                  <span
+                    class="tracking-wider capitalize underline hover:no-underline"
+                    >Read More</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div>
+              <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                <img
+                  src="/assets/blog2.jpg"
+                  alt=""
+                  class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+                />
+              </div>
+              <div>
+                <div class="flex items-center gap-5 py-5">
+                  <p>20 August 2024</p>
+                  <p>1 min read</p>
+                </div>
+
+                <a
+                  href="#blog"
+                  class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline"
+                  >How to Organize Your budget for Maximum Productivity?</a
+                >
+
+                <p class="leading-relaxed my-5">
+                  Global provider connected products for consumers and
+                  enterprises worldwide, supply chain control is everything...
+                </p>
+
+                <a
+                  href="#blog"
+                  class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out"
+                >
+                  <span
+                    class="tracking-wider capitalize underline hover:no-underline"
+                    >Read More</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div>
+              <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                <img
+                  src="/assets/blog3.jpg"
+                  alt=""
+                  class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+                />
+              </div>
+              <div>
+                <div class="flex items-center gap-5 py-5">
+                  <p>20 August 2024</p>
+                  <p>1 min read</p>
+                </div>
+
+                <a
+                  href="#blog"
+                  class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline"
+                  >Should Small Businesses Be Entitled to this System?</a
+                >
+
+                <p class="leading-relaxed my-5">
+                  Our team provides skilled and experiemced managers who know
+                  the intricacies of this vertical and focus...
+                </p>
+
+                <a
+                  href="#blog"
+                  class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out"
+                >
+                  <span
+                    class="tracking-wider capitalize underline hover:no-underline"
+                    >Read More</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div>
+              <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                <img
+                  src="/assets/user3.jpg"
+                  alt=""
+                  class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+                />
+              </div>
+              <div>
+                <div class="flex items-center gap-5 py-5">
+                  <p>20 August 2024</p>
+                  <p>1 min read</p>
+                </div>
+
+                <a
+                  href="#blog"
+                  class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline"
+                  >Should Small Businesses Be Entitled to this System?</a
+                >
+
+                <p class="leading-relaxed my-5">
+                  Our team provides skilled and experiemced managers who know
+                  the intricacies of this vertical and focus...
+                </p>
+
+                <a
+                  href="#blog"
+                  class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out"
+                >
+                  <span
+                    class="tracking-wider capitalize underline hover:no-underline"
+                    >Read More</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download-app" class="bg-color-primary-light">
+        <div
+          class="container mx-auto px-6 py-10 h-[80vh] grid place-items-center"
+        >
+          <div class="text-center md:w-2/3 m-auto">
+            <h1 class="title">Download App Now And Save Your Money</h1>
+            <p class="leading-relaxed pt-5">
+              Serving an impressive list of long-term money with experience and
+              expertise in multiple industries.
+            </p>
+            <div
+              class="flex flex-col md:flex-row items-center justify-center gap-10 pt-10"
+            >
+              <a
+                href=""
+                class="h-16 w-44 grid place-items-center rounded-lg hover:opacity-70"
+              >
+                <img
+                  src="/assets/appstore.png"
+                  alt=""
+                  class="border rounded-md"
+                />
+              </a>
+
+              <a
+                href=""
+                class="h-16 w-44 grid place-items-center rounded-lg hover:opacity-70"
+              >
+                <img src="/assets/playstore (2).png" alt="" class="w-96" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container mx-auto px-6 py-20">
+          <div class="text-center m-auto mb-20 md:-w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4">Have A Question</h4>
+            <h1 class="title">Get In Touch</h1>
+          </div>
+          <form action="">
+            <div class="w-full m-auto text-center md:w-2/3">
+              <div class="text-color-primary-dark grid gap-6 md:grid-cols-2">
+                <input
+                  type="text"
+                  class="bg-gray-50 border border-gray-100text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Name"
+                />
+
+                <input
+                  type="text"
+                  class="bg-gray-50 border border-gray-100text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Email"
+                />
+
+                <input
+                  type="text"
+                  class="bg-gray-50 border border-gray-100text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Phone"
+                />
+
+                <input
+                  type="text"
+                  class="bg-gray-50 border border-gray-100text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Company"
+                />
+              </div>
+              <textarea
+                rows="4"
+                class="text-color-primary-dark bg-gray-50 border border-gray-100text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary my-10"
+                placeholder="Message"
+              ></textarea>
+
+              <button class="btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="bg-color-primary-dark relative">
+          <div class="container mx-auto px-6 py-10">
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 pb-10">
+              <div class="space-y-6">
+                <h4 class="font-bold text-lg">About App</h4>
+                <p class="leading-relaxed">
+                  EnochCode Finance is a comprehensive financial management app
+                  designed to help users take control of their finances with
+                  ease. Whether you are a frequent traveler, a busy
+                  professional, or someone who wants to keep a close eye on your
+                  spending and savings, this app offers a suite of features to
+                  simplify financial management. The intuitive interface and
+                  robust functionality make it an ideal choice for users from
+                  all walks of life.
+                </p>
+                <div class="flex gap-5 items-center">
+                  <p>Follow Us</p>
+                  <i
+                    class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="flex justify-between md:justify-around">
+                <div class="space-y-6">
+                  <h4 class="font-bold text-lg">Quick Links</h4>
+                  <ul class="space-y-3">
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Home</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Features</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Testimonial</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Blog</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="space-y-6">
+                  <h4 class="font-bold text-lg">Help</h4>
+                  <ul class="space-y-3">
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">About Us</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Partners</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Reviews</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Help</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="space-y-6">
+                <h4 class="font-bold text-lg">News Letter</h4>
+                <p class="leading-relaxed">
+                  Subscribe With An Email And Loads Of News Will Be Sent To You
+                </p>
+                <div class="flex items-center">
+                  <input
+                    class="w-3/4 text-color-gray bg-color-white p-2 lg:p-rounded-l-md focus:outline-none lg:px-5 lg:py-3"
+                    placeholder="Enter your Email"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90"
+                  >
+                    <i class="fa fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center pt-10 border-t border-color-gray">
+              <p>2024 &copy; Omoooo E get as E Be. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
